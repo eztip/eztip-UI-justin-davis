@@ -15,7 +15,7 @@ section.nav-bar {
             justify-content: space-around;
             align-items: center;
             img {
-                width: 25%;
+                width: 75%;
             }   
             h1 {
                 font-size: 2rem;
@@ -40,3 +40,10 @@ section.nav-bar {
         } 
     }
 } 
+
+.hide {
+    display: none;
+    @media(min-width: @desktop-width) {
+        display: flex;
+    }
+}

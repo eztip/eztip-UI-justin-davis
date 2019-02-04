@@ -32,12 +32,16 @@ p {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 350px;
   width: 100%;
   margin: 0 auto;
-}
 
-section {
-  background-color: @main-background-color;
-  border: 0.1rem solid @main-font-color;
+  @media(min-width: @desktop-width) {
+      max-width: 1000px;
+  }
+
+  img {
+      width: 100%;
+  }  
+  
 }

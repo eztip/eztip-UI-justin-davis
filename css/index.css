@@ -157,13 +157,17 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
+  max-width: 350px;
   width: 100%;
   margin: 0 auto;
 }
-section {
-  background-color: #ffffff;
-  border: 0.1rem solid #000000;
+@media (min-width: 800px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+.container img {
+  width: 100%;
 }
 section.nav-bar {
   background-color: #43D9B8;
@@ -183,7 +187,7 @@ section.nav-bar div.container div {
   align-items: center;
 }
 section.nav-bar div.container div img {
-  width: 25%;
+  width: 75%;
 }
 section.nav-bar div.container div h1 {
   font-size: 2rem;
@@ -205,27 +209,29 @@ section.nav-bar div.container nav a:hover {
   background-color: #f1f1f1;
   color: #000000;
 }
-section.introduction {
-  margin: 15% 0 20% 0;
+.hide {
+  display: none;
 }
-section.introduction div.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@media (min-width: 800px) {
+  .hide {
+    display: flex;
+  }
 }
-section.introduction div.container div {
-  width: 50%;
+p {
+  margin: 1rem;
 }
-section.introduction div.container div h2 {
-  margin: 2rem;
+.button {
+  width: 100PX;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  background-color: #43D9B8;
 }
-section.introduction div.container div p {
-  margin: 1.5rem;
-}
-section.introduction div.container img {
-  margin: 2rem;
-  width: 40%;
-  border-radius: 0.5rem;
+.button a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #000000;
 }
 footer {
   background-color: #f1f1f1;
