@@ -1,7 +1,7 @@
 // Navigation styles
 
 section.nav-bar {
-    background-color: rgba(85, 0, 0, .8);
+    background-color: @main-background-color;
     padding: 1rem;
     position: fixed;
     top: 0;
@@ -27,15 +27,15 @@ section.nav-bar {
             justify-content: right;
             align-items: center;
             a {
-                color: rgb(200, 200, 200); 
+                color: @main-font-color; 
                 text-decoration: none;
                 font-size: 1.8rem;
                 padding: 1.5rem;
                 border-radius: 0.5rem;
             }
             a:hover {
-                background-color: rgb(200, 200, 200);
-                color: rgb(95, 0, 0);
+                background-color: @alt-background-color;
+                color: @main-font-color;
             }
         } 
     }

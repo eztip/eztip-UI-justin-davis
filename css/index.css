@@ -135,8 +135,8 @@ html {
 html,
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: #f5f5f5;
-  background-color: #191919;
+  color: #000000;
+  background-color: #ffffff;
 }
 h1,
 h2,
@@ -144,7 +144,7 @@ h3,
 h4,
 h5 {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #aaaaaa;
+  color: #000000;
 }
 h2 {
   font-size: 3.2rem;
@@ -162,12 +162,11 @@ p {
   margin: 0 auto;
 }
 section {
-  background-color: #6e0000;
-  background-color: hsl(1, 70%, 30%);
-  border: 0.1rem solid #4b0000;
+  background-color: #ffffff;
+  border: 0.1rem solid #000000;
 }
 section.nav-bar {
-  background-color: rgba(85, 0, 0, 0.8);
+  background-color: #ffffff;
   padding: 1rem;
   position: fixed;
   top: 0;
@@ -196,15 +195,15 @@ section.nav-bar div.container nav {
   align-items: center;
 }
 section.nav-bar div.container nav a {
-  color: #c8c8c8;
+  color: #000000;
   text-decoration: none;
   font-size: 1.8rem;
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
 section.nav-bar div.container nav a:hover {
-  background-color: #c8c8c8;
-  color: #5f0000;
+  background-color: #f1f1f1;
+  color: #000000;
 }
 section.introduction {
   margin: 15% 0 20% 0;
@@ -228,24 +227,8 @@ section.introduction div.container img {
   width: 40%;
   border-radius: 0.5rem;
 }
-section.realms {
-  margin: 20rem 0;
-}
-section.realms div.container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-section.realms div.container img {
-  margin: 1rem;
-  width: 25rem;
-  border-radius: 100rem;
-  border: 3px solid #640000;
-  background-color: #919191;
-}
 footer {
-  background-color: #0f0f0f;
+  background-color: #f1f1f1;
 }
 footer div.container {
   height: 20rem;
@@ -257,5 +240,5 @@ footer div.container {
 footer div.container div.seperator {
   height: 75%;
   width: 2px;
-  background-color: #b1b1b1;
+  background-color: #000000;
 }
