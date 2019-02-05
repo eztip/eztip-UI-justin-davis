@@ -37,13 +37,30 @@ section.nav-bar {
                 background-color: @alt-background-color;
                 color: @main-font-color;
             }
-        } 
+        }
+        .hide {
+            display: inline-block;
+            cursor: pointer;
+            margin: 0;
+            @media(min-width: @desktop-width) {
+                display: none;
+            }
+            .menu-icon-1, .menu-icon-2, .menu-icon-3 {
+                width: 35px;
+                height: 5px;
+                background-color: #333;
+                margin: 6px 0;
+                transition: 0.4s;
+                border-radius: 2px;
+            }
+        }
     }
 } 
 
-.hide {
+.hidden {
     display: none;
     @media(min-width: @desktop-width) {
         display: flex;
     }
 }
+

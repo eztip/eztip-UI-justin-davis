@@ -209,11 +209,31 @@ section.nav-bar div.container nav a:hover {
   background-color: #f1f1f1;
   color: #000000;
 }
-.hide {
+section.nav-bar div.container .hide {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+}
+@media (min-width: 800px) {
+  section.nav-bar div.container .hide {
+    display: none;
+  }
+}
+section.nav-bar div.container .hide .menu-icon-1,
+section.nav-bar div.container .hide .menu-icon-2,
+section.nav-bar div.container .hide .menu-icon-3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 2px;
+}
+.hidden {
   display: none;
 }
 @media (min-width: 800px) {
-  .hide {
+  .hidden {
     display: flex;
   }
 }
