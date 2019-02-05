@@ -207,23 +207,34 @@ section.nav-bar div.container nav a {
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
+section.nav-bar div.container nav a .hidden {
+  display: none;
+}
+@media (min-width: 800px) {
+  section.nav-bar div.container nav a .hidden {
+    display: flex;
+  }
+}
 section.nav-bar div.container nav a:hover {
   background-color: #f1f1f1;
   color: #000000;
 }
-section.nav-bar div.container .hide {
-  display: inline-block;
+section.nav-bar div.container nav .hide {
+  flex-direction: column;
   cursor: pointer;
   margin: 0;
+  padding: 0;
+  justify-content: end;
+  align-items: center;
 }
 @media (min-width: 800px) {
-  section.nav-bar div.container .hide {
+  section.nav-bar div.container nav .hide {
     display: none;
   }
 }
-section.nav-bar div.container .hide .menu-icon-1,
-section.nav-bar div.container .hide .menu-icon-2,
-section.nav-bar div.container .hide .menu-icon-3 {
+section.nav-bar div.container nav .hide .menu-icon-1,
+section.nav-bar div.container nav .hide .menu-icon-2,
+section.nav-bar div.container nav .hide .menu-icon-3 {
   width: 35px;
   height: 5px;
   background-color: #333;
@@ -231,13 +242,21 @@ section.nav-bar div.container .hide .menu-icon-3 {
   transition: 0.4s;
   border-radius: 2px;
 }
-.hidden {
-  display: none;
+section.nav-bar div.container nav .hide .nav-menu {
+  position: fixed;
+  flex-direction: column;
+  top: 90px;
 }
 @media (min-width: 800px) {
-  .hidden {
-    display: flex;
+  section.nav-bar div.container nav .hide .nav-menu {
+    display: none;
   }
+}
+section.nav-bar div.container nav .hide .nav-menu a {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 0.5rem;
+  border: 1px solid #000000;
 }
 .container img {
   width: 100%;
