@@ -161,13 +161,15 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@media (min-width: 500px) {
+  .container {
+    max-width: 600px;
+  }
+}
 @media (min-width: 800px) {
   .container {
     max-width: 1000px;
   }
-}
-.container img {
-  width: 100%;
 }
 section.nav-bar {
   background-color: #43D9B8;
@@ -237,6 +239,9 @@ section.nav-bar div.container .hide .menu-icon-3 {
     display: flex;
   }
 }
+.container img {
+  width: 100%;
+}
 p {
   margin: 1rem;
 }
@@ -257,14 +262,16 @@ footer {
   background-color: #f1f1f1;
 }
 footer div.container {
-  height: 20rem;
+  padding: 5rem 3rem;
+  margin-top: 10rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  flex-wrap: wrap;
   align-items: center;
 }
-footer div.container div.seperator {
-  height: 75%;
-  width: 2px;
-  background-color: #000000;
+footer div.container div a {
+  width: 1rem 3rem;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
