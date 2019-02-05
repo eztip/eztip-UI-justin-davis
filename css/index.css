@@ -189,7 +189,7 @@ section.nav-bar div.container div {
   align-items: center;
 }
 section.nav-bar div.container div img {
-  width: 75%;
+  width: 70%;
 }
 section.nav-bar div.container div h1 {
   font-size: 2rem;
@@ -243,20 +243,20 @@ section.nav-bar div.container .hide .menu-icon-3 {
   width: 100%;
 }
 p {
-  margin: 1rem;
+  margin: 3rem 3rem;
 }
-.button {
-  width: 100PX;
-  font-size: 1.5rem;
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 5px;
-  background-color: #43D9B8;
+h2 {
+  margin: 3rem 1rem;
 }
 .button a {
+  font-size: 1.5rem;
+  border-radius: 5px;
+  background-color: #43D9B8;
   font-size: 1.3rem;
   text-decoration: none;
   color: #000000;
+  padding: 1rem 3rem;
+  margin-left: 3rem;
 }
 footer {
   background-color: #f1f1f1;
@@ -274,4 +274,5 @@ footer div.container div a {
   padding: 1rem 2rem;
   font-size: 1.5rem;
   text-decoration: none;
+  color: #000000;
 }
