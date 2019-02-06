@@ -207,17 +207,17 @@ section.nav-bar div.container nav a {
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
-section.nav-bar div.container nav a .hidden {
-  display: none;
-}
-@media (min-width: 800px) {
-  section.nav-bar div.container nav a .hidden {
-    display: flex;
-  }
-}
 section.nav-bar div.container nav a:hover {
   background-color: #f1f1f1;
   color: #000000;
+}
+section.nav-bar div.container nav .hidden {
+  display: none;
+}
+@media (min-width: 800px) {
+  section.nav-bar div.container nav .hidden {
+    display: flex;
+  }
 }
 section.nav-bar div.container nav .hide {
   flex-direction: column;

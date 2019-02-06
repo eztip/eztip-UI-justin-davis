@@ -32,16 +32,16 @@ section.nav-bar {
                 font-size: 1.8rem;
                 padding: 1.5rem;
                 border-radius: 0.5rem;
-                .hidden {
-                    display: none;
-                    @media(min-width: @desktop-width) {
-                        display: flex;
-                    }
-                }
             }
             a:hover {
                 background-color: @alt-background-color;
                 color: @main-font-color;
+            }
+            .hidden {
+                display: none;
+                @media(min-width: @desktop-width) {
+                    display: flex;
+                }
             }
             .hide {
                 flex-direction: column;
