@@ -16,7 +16,8 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-  <script src="./components/Tabs/Tabs.js" async></script>
+  <script src="./js/nav-menu.js" async></script>
+  <script src="./js/testimonial-carousel.js" async></script>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -27,69 +28,71 @@
     
     <section class="nav-bar">
         <div class="container">
-            <div>
+            <div class="nav-logo">
                 <img src="img/eztip-logo.png" alt="Navigation Logo Image">
             </div>
         
             <nav>
-                <a class="hidden" href="index.html">HOME</a>
-                <a class="hidden" href="team.html">TEAM</a>
-                <a class="hidden" href="about.html">ABOUT</a>
+                <a class="desk-link" href="index.html">HOME</a>
+                <a class="desk-link" href="team.html">TEAM</a>
+                <a class="desk-link" href="about.html">ABOUT</a>
                 <a href="https://leigh-ann-eztip.netlify.com">SIGN IN</a>
                 <a href="https://leigh-ann-eztip.netlify.com">SIGN UP</a>
 
-                <div class="hide">
-                    <div class="menu-icon-1"></div>
-                    <div class="menu-icon-2"></div>
-                    <div class="menu-icon-3"></div>
-                    <div class="nav-menu">
-                        <a href="index.html">HOME</a>
-                        <a href="team.html">TEAM</a>
-                        <a href="about.html">ABOUT</a>
+                <div class="drop-menu">
+                    <div class="menu-icon-top"></div>
+                    <div class="menu-icon-mid"></div>
+                    <div class="menu-icon-bot"></div>
+                    <div class="drop-links">
+                        <a class="drop-link" href="index.html">HOME</a>
+                        <a class="drop-link" href="team.html">TEAM</a>
+                        <a class="drop-link" href="about.html">ABOUT</a>
                     </div>                
                 </div> 
             </nav>
         </div>
     </section>
-
-    <div class="container">
-        <section>
-            <img src="img/restaurant-header.jpg" alt="Restaurant Header Image">
-        </section>
-        
-        <section>
-            <div>
+    
+    <div class="main">
+        <div class="container">
+            <section>
+                <img src="img/restaurant-header.jpg" alt="Restaurant Header Image">
+            </section>
+            
+            <section>
                 <div>
-                    <h2>TIP</h2>
+                    <div>
+                        <h2>TIP</h2>
 
-                    <p>
-                            Tip your server directly. No need to pull out cash, wait around, 
-                            or worry that your tip is going to the wrong person.
-                    </p>
+                        <p>
+                                Tip your server directly. No need to pull out cash, wait around, 
+                                or worry that your tip is going to the wrong person.
+                        </p>
 
-                    <div class="button">
-                        <a href="">GIVE TIP</a>
+                        <div class="button">
+                            <a href="">GIVE TIP</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <div>
+            <section>
                 <div>
-                    <h2>SERVING</h2>
+                    <div>
+                        <h2>SERVING</h2>
 
-                    <p>
-                            Manage your tips from your phone or computer. The days of 
-                            middlemen restaurant managers “losing” your tips are over.
-                    </p>
+                        <p>
+                                Manage your tips from your phone or computer. The days of 
+                                middlemen restaurant managers “losing” your tips are over.
+                        </p>
 
-                    <div class="button">
-                        <a href="">RECIEVE TIPS</a>
+                        <div class="button">
+                            <a href="">RECIEVE TIPS</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
 
     <footer>

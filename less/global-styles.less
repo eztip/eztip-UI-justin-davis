@@ -32,15 +32,15 @@ p {
 }
 
 .container {
-  max-width: 350px;
+  max-width: @mobile-width;
   width: 100%;
   margin: 0 auto;
 
   @media(min-width: @tablet-width) {
-    max-width: 600px;
+    max-width: @tablet-width;
   }
 
   @media(min-width: @desktop-width) {
-      max-width: 1000px;
+      max-width: @desktop-width;
   }
 }

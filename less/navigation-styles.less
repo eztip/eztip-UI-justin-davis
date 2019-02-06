@@ -1,26 +1,17 @@
 // Navigation styles
 
+// Navigation bar
+
 section.nav-bar {
     background-color: @section-background-color;
     padding: 1rem;
     position: fixed;
     top: 0;
+    height: 80px;
     width: 100%;
     div.container {
         display: flex;
         justify-content: space-between;
-        div {
-            width: 25%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            img {
-                width: 70%;
-            }   
-            h1 {
-                font-size: 2rem;
-            }
-        }
         nav {
             width: 75%;
             display: flex;
@@ -37,45 +28,54 @@ section.nav-bar {
                 background-color: @alt-background-color;
                 color: @main-font-color;
             }
-            .hidden {
+            .desk-link {
                 display: none;
                 @media(min-width: @desktop-width) {
                     display: flex;
                 }
             }
-            .hide {
-                flex-direction: column;
-                cursor: pointer;
-                margin: 0;
-                padding: 0;
-                justify-content: end;
-                align-items: center;
-                @media(min-width: @desktop-width) {
-                    display: none;
-                }
-                .menu-icon-1, .menu-icon-2, .menu-icon-3 {
-                    width: 35px;
-                    height: 5px;
-                    background-color: #333;
-                    margin: 6px 0;
-                    transition: 0.4s;
-                    border-radius: 2px;
-                }
-                .nav-menu {
-                    position: fixed;
-                    flex-direction: column;
-                    top: 90px;
-                    @media(min-width: @desktop-width) {
-                        display: none;
-                    }
-                    a {
-                    width: 100%;
-                    background-color: @alt-background-color;
-                    border-radius: .5rem;
-                    border: 1px solid @main-font-color;
-                    }
-                }
-            }
         }
     }
 } 
+
+// Navigation Logo
+
+.nav-logo {
+    width: 130px;
+} 
+
+// Drop-down menu for mobile and tablet widths
+
+.drop-menu {
+    flex-direction: column;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    justify-content: end;
+    align-items: center;
+    @media(min-width: @desktop-width) {
+        display: none;
+    }
+    .menu-icon-top, .menu-icon-mid, .menu-icon-bot {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 5px 0;
+        transition: 0.4s;
+        border-radius: 2px;
+    }
+    div.drop-links {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 80px;
+        @media(min-width: @desktop-width) {
+            display: none;
+        }
+        a.drop-link {
+        background-color: @alt-background-color;
+        background-color: hsla(100, 100%, 100%, 0.75);
+        border-radius: .2rem;
+        }
+    }
+}
