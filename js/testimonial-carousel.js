@@ -13,8 +13,8 @@ class Carousel {
         this.imgs = Array.from(this.imgs).map(imgs => new CarouselImg(imgs));
 
         // Select right and left buttons
-        this.rgtBtn = document.getElementsByClassName('right-button');
-        this.lftBtn = document.getElementsByClassName('left-button');
+        this.rgtBtn = document.getElementById('right-button');
+        this.lftBtn = document.getElementById('left-button');
         
         // Add a click event that invokes this.rightClick
         this.rgtBtn.addEventListener('click', () => this.rightClick());

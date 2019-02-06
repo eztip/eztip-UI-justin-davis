@@ -239,6 +239,7 @@ section.nav-bar div.container nav .desk-link {
   display: flex;
   flex-direction: column;
   top: 80px;
+  right: 10rem;
 }
 @media (min-width: 1000px) {
   .drop-menu div.drop-links {
@@ -271,6 +272,21 @@ h2 {
   color: #000000;
   padding: 1rem 3rem;
   margin-left: 3rem;
+}
+.content-container {
+  display: flex;
+}
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonial-carousel {
+  display: flex;
+  justify-content: space-around;
+}
+.testimonial-carousel img {
+  width: 10%;
 }
 footer {
   background-color: #f1f1f1;
