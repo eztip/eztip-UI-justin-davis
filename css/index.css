@@ -171,40 +171,38 @@ p {
     max-width: 1000px;
   }
 }
-section.nav-bar {
+.nav-bar {
   background-color: #43D9B8;
   padding: 1rem;
   position: fixed;
   top: 0;
   height: 80px;
   width: 100%;
-}
-section.nav-bar div.container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-section.nav-bar div.container nav {
+.nav-bar nav {
   width: 75%;
   display: flex;
   justify-content: right;
   align-items: center;
 }
-section.nav-bar div.container nav a {
+.nav-bar nav a {
   color: #000000;
   text-decoration: none;
   font-size: 1.8rem;
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
-section.nav-bar div.container nav a:hover {
+.nav-bar nav a:hover {
   background-color: #f1f1f1;
   color: #000000;
 }
-section.nav-bar div.container nav .desk-link {
+.nav-bar nav .desk-link {
   display: none;
 }
 @media (min-width: 1000px) {
-  section.nav-bar div.container nav .desk-link {
+  .nav-bar nav .desk-link {
     display: flex;
   }
 }
@@ -214,10 +212,10 @@ section.nav-bar div.container nav .desk-link {
 .drop-menu {
   flex-direction: column;
   cursor: pointer;
-  margin: 0;
-  padding: 0;
+  margin: 0.5rem;
+  padding: 0.5rem 0.75rem;
   justify-content: end;
-  align-items: center;
+  align-self: center;
 }
 @media (min-width: 1000px) {
   .drop-menu {
@@ -235,21 +233,35 @@ section.nav-bar div.container nav .desk-link {
   border-radius: 2px;
 }
 .drop-menu div.drop-links {
+  background-color: #43D9B8;
+  background-color: hsla(0, 0%, 100%, 0.75);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-top: none;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
   position: fixed;
   display: flex;
   flex-direction: column;
   top: 80px;
-  right: 10rem;
-}
-@media (min-width: 1000px) {
-  .drop-menu div.drop-links {
-    display: none;
-  }
+  right: 0.5rem;
+  padding: 1rem;
+  display: none;
 }
 .drop-menu div.drop-links a.drop-link {
   background-color: #f1f1f1;
   background-color: hsla(0, 0%, 100%, 0.75);
-  border-radius: 0.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 300;
+  color: #000000;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+.drop-menu:hover {
+  background-color: #ffffff;
 }
 .container img {
   width: 100%;

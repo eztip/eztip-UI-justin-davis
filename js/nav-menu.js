@@ -1,15 +1,15 @@
-class DropLinks {
-    constructor(dropLink){
-        this.dropLink = dropLink;
+class DropLink {
+    constructor(dropElement){
+        this.dropElement = dropElement;
       
         this.button = document.getElementsByClassName("drop-menu");
 
-        this.button.addEventListener('click', () => this.toggleContent());
+        this.button.addEventListener('click', () => this.toggleMenu());
     }
-    toggleContent() {
-        this.dropLink.classList.toggle("drop-links");
+    toggleMenu() {
+        dropLinks.style.display = 'none';
     }
 }
   
 
-let dropLinks = document.getElementsByClassName('.drop-links').forEach( el => new DropLinks(el));
+let dropLinks = document.getElementsByClassName('.drop-links').forEach( el => new DropLink(el));

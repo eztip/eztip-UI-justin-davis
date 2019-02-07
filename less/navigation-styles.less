@@ -2,40 +2,38 @@
 
 // Navigation bar
 
-section.nav-bar {
+.nav-bar {
     background-color: @section-background-color;
     padding: 1rem;
     position: fixed;
     top: 0;
     height: 80px;
     width: 100%;
-    div.container {
+    display: flex;
+    justify-content: space-around;
+    nav {
+        width: 75%;
         display: flex;
-        justify-content: space-between;
-        nav {
-            width: 75%;
-            display: flex;
-            justify-content: right;
-            align-items: center;
-            a {
-                color: @main-font-color; 
-                text-decoration: none;
-                font-size: 1.8rem;
-                padding: 1.5rem;
-                border-radius: 0.5rem;
-            }
-            a:hover {
-                background-color: @alt-background-color;
-                color: @main-font-color;
-            }
-            .desk-link {
-                display: none;
-                @media(min-width: @desktop-width) {
-                    display: flex;
-                }
+        justify-content: right;
+        align-items: center;
+        a {
+            color: @main-font-color; 
+            text-decoration: none;
+            font-size: 1.8rem;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+        }
+        a:hover {
+            background-color: @alt-background-color;
+            color: @main-font-color;
+        }
+        .desk-link {
+            display: none;
+            @media(min-width: @desktop-width) {
+                display: flex;
             }
         }
-    }
+    } 
 } 
 
 // Navigation Logo
@@ -49,10 +47,10 @@ section.nav-bar {
 .drop-menu {
     flex-direction: column;
     cursor: pointer;
-    margin: 0;
-    padding: 0;
+    margin: 0.5rem;
+    padding: 0.5rem 0.75rem;
     justify-content: end;
-    align-items: center;
+    align-self: center;
     @media(min-width: @desktop-width) {
         display: none;
     }
@@ -65,18 +63,36 @@ section.nav-bar {
         border-radius: 2px;
     }
     div.drop-links {
+        background-color: @section-background-color;
+        background-color: hsla(100, 100%, 100%, 0.75);
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-top: none;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
         position: fixed;
         display: flex;
         flex-direction: column;
         top: 80px;
-        right: 10rem;
-        @media(min-width: @desktop-width) {
-            display: none;
-        }
+        right: .5rem;
+        padding: 1rem;
+        display: none;
+
         a.drop-link {
-        background-color: @alt-background-color;
-        background-color: hsla(100, 100%, 100%, 0.75);
-        border-radius: .2rem;
+            background-color: @alt-background-color;
+            background-color: hsla(100, 100%, 100%, 0.75);
+            border: 1px solid rgba(0, 0, 0, 0.25);
+            border-radius: .5rem;
+            font-size: 2rem;
+            text-decoration: none;
+            font-weight: 300;
+            color: @main-font-color;
+            text-align: center;
+            margin: 1rem 0;
+            padding: 0.5rem;
         }
     }
+}
+
+.drop-menu:hover {
+    background-color: @main-background-color;
 }

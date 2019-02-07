@@ -9,3 +9,17 @@
     border-radius: 0.5rem;
     transition: background-color 2s;
 }
+
+.margins() {
+    max-width: @mobile-width;
+    width: 100%;
+    margin: 0 auto;
+
+    @media(min-width: @tablet-width) {
+    max-width: @tablet-width;
+    }
+
+    @media(min-width: @desktop-width) {
+        max-width: @desktop-width;
+    }
+}
