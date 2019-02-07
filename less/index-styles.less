@@ -10,13 +10,31 @@
     width: 100%;
 }  
 
-p {
-    margin: 3rem 3rem;
+// Content Styles
+.dbl-flex {
+    display: flex; 
+    flex-direction: column;
+    @media(min-width: @desktop-width) {
+        flex-direction: row;
+    }
+}
+
+.half-page {
+    width: 100%;
+}
+
+.half-page-img {
+    width: 100%;
 }
 
 h2 {
     margin: 3rem 1rem;
 }
+
+p {
+    margin: 3rem 3rem;
+}
+
 
 .button {
     a {
