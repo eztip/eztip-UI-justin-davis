@@ -334,9 +334,27 @@ p {
 .team-pics {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-.team-pics img {
+.team-pics .member {
   width: 200px;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-pics .member img {
+  width: 150px;
+}
+.team-pics .member h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.team-pics .member h3 {
+  font-size: 1.2rem;
+}
+.member-hover {
+  background-color: #f1f1f1;
 }
 footer {
   background-color: #f1f1f1;
