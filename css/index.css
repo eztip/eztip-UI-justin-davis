@@ -209,7 +209,7 @@ p {
 .nav-logo {
   width: 130px;
 }
-.drop-menu {
+.drop-icon {
   flex-direction: column;
   cursor: pointer;
   margin: 0.5rem;
@@ -218,13 +218,13 @@ p {
   align-self: center;
 }
 @media (min-width: 1000px) {
-  .drop-menu {
+  .drop-icon {
     display: none;
   }
 }
-.drop-menu .menu-icon-top,
-.drop-menu .menu-icon-mid,
-.drop-menu .menu-icon-bot {
+.drop-icon .drop-icon-top,
+.drop-icon .drop-icon-mid,
+.drop-icon .drop-icon-bot {
   width: 35px;
   height: 5px;
   background-color: #333;
@@ -232,7 +232,10 @@ p {
   transition: 0.4s;
   border-radius: 2px;
 }
-.drop-menu div.drop-links {
+.drop-icon:hover {
+  background-color: #ffffff;
+}
+.drop-menu {
   background-color: #43D9B8;
   background-color: hsla(0, 0%, 100%, 0.75);
   border: 1px solid rgba(0, 0, 0, 0.5);
@@ -247,7 +250,7 @@ p {
   padding: 1rem;
   display: none;
 }
-.drop-menu div.drop-links a.drop-link {
+.drop-menu .drop-link {
   background-color: #f1f1f1;
   background-color: hsla(0, 0%, 100%, 0.75);
   border: 1px solid rgba(0, 0, 0, 0.25);
@@ -260,8 +263,8 @@ p {
   margin: 1rem 0;
   padding: 0.5rem;
 }
-.drop-menu:hover {
-  background-color: #ffffff;
+.drop-toggle {
+  display: flex;
 }
 .container img {
   width: 100%;

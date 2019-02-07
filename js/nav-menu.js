@@ -1,15 +1,18 @@
-class DropLink {
-    constructor(dropElement){
-        this.dropElement = dropElement;
-      
-        this.button = document.getElementsByClassName("drop-menu");
-
-        this.button.addEventListener('click', () => this.toggleMenu());
+class Dropdown {
+    constructor(element) {
+        this.element = element;
+        this.button = this.element.querySelector(".drop-icon");
+        this.content = this.element.querySelector(".drop-menu");
+        this.button.addEventListener('click', e => this.toggleMenu());
+        window.addEventListener("resize", () => this.resize(), true);
     }
     toggleMenu() {
-        dropLinks.style.display = 'none';
+        this.content.classList.toggle("drop-toggle");
+    }
+    resize() {
+
+        this.content.classList.remove('drop-toggle');
     }
 }
-  
 
-let dropLinks = document.getElementsByClassName('.drop-links').forEach( el => new DropLink(el));
+let dropdowns = document.querySelectorAll(".drop-component").forEach(e => new Dropdown(e));
