@@ -266,9 +266,6 @@ p {
     max-width: 1000px;
   }
 }
-.header-image {
-  width: 100%;
-}
 .dbl-flex {
   display: flex;
   flex-direction: column;
@@ -308,13 +305,13 @@ p {
 .content-container {
   display: flex;
 }
-.testimonial-container {
+.testimonials-container {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.testimonial-container h2 {
+.testimonials-container h2 {
   padding: 2rem;
 }
 .testimonial-carousel {
@@ -322,14 +319,23 @@ p {
   justify-content: space-around;
 }
 .testimonial-carousel img {
-  width: 15%;
+  width: 10%;
 }
-.carousel-display {
+.testimonial-carousel .user-image {
+  width: 200%;
+}
+.carousel-testimonial {
   margin: 5rem auto;
   width: 60%;
   background-color: #f1f1f1;
   border-radius: 0.5rem;
   padding: 4rem;
+}
+.header-image-team {
+  width: 100%;
+}
+.header-image-team img {
+  margin: 2rem auto;
 }
 .team-pics {
   display: flex;
