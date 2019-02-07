@@ -6,37 +6,49 @@
 }
 
 // Content Styles
-.dbl-flex {
+#land-info {
     display: flex; 
     flex-direction: column;
-    @media(min-width: @desktop-width) {
+    @media(min-width: @tablet-width) {
         flex-direction: row;
     }
-}
-
-.half-page {
-    width: 100%;
-    padding: 2rem;
-    section {
-        margin-bottom: 4rem;
+    .txt-cont {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        #land-title {
+            font-size: 2rem;
+        }
+        #land-txt {
+            display: flex;
+            flex-direction: column;
+            @media(min-width: @desktop-width) {
+            flex-direction: row;
+            }
+            section {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+    .land-img {
+        width: 100%;
+        margin: 3rem auto;
     }
 }
 
-.half-page-img {
-    width: 100%;
-    padding: 2rem;
-}
+
 
 h2 {
-    margin: 3rem 1rem;
+    margin: 3rem auto;
 }
 
 p {
-    margin: 3rem 3rem;
+    margin: 3rem auto;
 }
 
 
 .button {
+    margin: 3rem auto;
     a {
         font-size: 1.5rem;
         border-radius: 5px;
@@ -45,7 +57,6 @@ p {
         text-decoration: none;
         color: @main-font-color;
         padding: 1rem 3rem;
-        margin-left: 3rem;
     }
 }
 

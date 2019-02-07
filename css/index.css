@@ -266,31 +266,47 @@ p {
     max-width: 1000px;
   }
 }
-.dbl-flex {
+#land-info {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 800px) {
+  #land-info {
+    flex-direction: row;
+  }
+}
+#land-info .txt-cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#land-info .txt-cont #land-title {
+  font-size: 2rem;
+}
+#land-info .txt-cont #land-txt {
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 1000px) {
-  .dbl-flex {
+  #land-info .txt-cont #land-txt {
     flex-direction: row;
   }
 }
-.half-page {
-  width: 100%;
-  padding: 2rem;
+#land-info .txt-cont #land-txt section {
+  margin-bottom: 3rem;
 }
-.half-page section {
-  margin-bottom: 4rem;
-}
-.half-page-img {
+#land-info .land-img {
   width: 100%;
-  padding: 2rem;
+  margin: 3rem auto;
 }
 h2 {
-  margin: 3rem 1rem;
+  margin: 3rem auto;
 }
 p {
-  margin: 3rem 3rem;
+  margin: 3rem auto;
+}
+.button {
+  margin: 3rem auto;
 }
 .button a {
   font-size: 1.5rem;
@@ -300,7 +316,14 @@ p {
   text-decoration: none;
   color: #000000;
   padding: 1rem 3rem;
-  margin-left: 3rem;
+}
+.half-page-img-about {
+  display: none;
+}
+@media (min-width: 800px) {
+  .half-page-img-about {
+    display: flex;
+  }
 }
 .content-container {
   display: flex;
