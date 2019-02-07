@@ -331,6 +331,13 @@ p {
   border-radius: 0.5rem;
   padding: 4rem;
 }
+.team-pics {
+  display: flex;
+  justify-content: space-evenly;
+}
+.team-pics img {
+  width: 200px;
+}
 footer {
   background-color: #f1f1f1;
 }
