@@ -345,6 +345,7 @@ p {
 }
 .team-pics .member img {
   width: 150px;
+  margin-top: 2rem;
 }
 .team-pics .member h2 {
   font-size: 1.8rem;
@@ -355,6 +356,9 @@ p {
 }
 .member-hover {
   background-color: #f1f1f1;
+}
+.member-hover p {
+  display: flex;
 }
 footer {
   background-color: #f1f1f1;
