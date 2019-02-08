@@ -1,49 +1,29 @@
 class Carousel {
     constructor(carouselElement){
-        // assign this.carouselElement to the carouselElement DOM reference
         this.carouselElement = carouselElement;
-        // Select all images
-        this.imgs = document.querySelectorAll(`.slide-image`);
-        // Map over the newly converted imgs NodeList
-        this.imgs = Array.from(this.imgs).map(imgs => new CarouselImg(imgs));
-        // Select right and left buttons
-        this.rgtBtn = document.getElementById('right-button');
-        this.lftBtn = document.getElementById('left-button');
-        // Add a click event that invokes this.rightClick
-        this.rgtBtn.addEventListener('click', () => this.rightClick());
-        // Add a click event that invokes this.leftClick
-        this.lftBtn.addEventListener('click', () => this.leftClick());
+
+        this.rgtBtn = document.querySelector('.right-button');
+        this.lftBtn = document.querySelector('.left-button');
+        this.imgs = document.querySelectorAll('.user-image');
+
+        this.index = 0;
+        this.imgs[this.index].style.display="block";
+
+        this.right.addEventListener("click", () => this.rightClick());
+        this.left.addEventListener("click", () => this.leftClick());
     }
 
     rightClick() {
-        console.log("The right arrow was clicked!");
-        // Iterate the image index counter to avoid overflow
-        imgInd += imgInd; 
-        // Reset the image index counter to avoid overflow
-        if (imgInd > imgs.length) {
-            imgInd = 0;
-        } 
-        // Select all images with the '.slide-image' class on them
-        const slideImages = document.querySelectorAll('.slide-image');
-        // Iterate through the NodeList displaying "none" each element
-        slideImages.forEach(slideImg => slideImg.style.display = "none");
-        // Looping through the this.imgs array and invoking selectImg()
-        slideImages.forEach(img => img.selectImg(imgs[imgInd]));
+        console.log('Hello');
+        this.imgs[this.index].style.display = 'none';
+		this.index === this.imgs.length - 1 ? this.index = 0 : this.index++;
+        this.imgs[this.index].style.display = 'block';
     }
 
     leftClick() {
-        // Iterate the image index counter to avoid overflow
-        imgInd -= imgInd; 
-        // Reset the image index counter to avoid overflow
-        if (imgInd < 0) {
-            imgInd = imgs.length;
-        }       
-        // Select all images with the '.slide-image' class on them
-        const slideImages = document.querySelectorAll('.slide-image');
-        // Iterate through the NodeList displaying "none" each element
-        slideImages.forEach(slideImg => slideImg.style.display = "none");
-        // Looping through the this.imgs array and invoking selectImg()
-        this.imgs.forEach(img => img.selectImg(imgs[imgInd]));
+        this.imgs[this.index].style.display = 'none';
+		this.index === 0 ? this.index = this.imgs.length - 1 : this.index--;
+        this.imgs[this.index].style.display = 'block';
     }
 }
 
@@ -56,12 +36,4 @@ class CarouselImg {
     }
 }
 
-let carousels = document.querySelectorAll('.carousel').forEach( caro => new Carousel(caro));
-
-/* 
-    1. grab a reference to the carousel, and in it grab the laft and right buttons
-    2. grab a reference to all of the images
-    3. Create a current index
-    4. Those buttons are gonna need some click handlers.
-    5. Make the cards slide in and out, or fade.
-*/
+let carousels = document.querySelectorAll('.testimonials-container').forEach( caro => new Carousel(caro));
