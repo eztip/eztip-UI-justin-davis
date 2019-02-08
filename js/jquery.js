@@ -7,10 +7,10 @@ $(document).ready(function(){
   $(function(){
       $('.team-pics').hover(function() {
         $(this).addClass('member-hover');
-        $('.hidden-blurb').slideDown(500);
+        $('.hidden-blurb').slideToggle(500);
       }, function() {
         $(this).removeClass('member-hover');
-        $('.hidden-blurb').slideUp(500);
+        $('.hidden-blurb').slideToggle(500);
       })
     })
 
