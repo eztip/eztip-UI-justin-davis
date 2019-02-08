@@ -318,6 +318,7 @@ p {
 }
 h2 {
   margin: 3rem auto;
+  font-size: 2.5rem;
 }
 p {
   margin: 3rem auto;
@@ -340,6 +341,10 @@ p {
 .about-content {
   margin: 15rem 0;
 }
+.about-content h1 {
+  font-size: 3rem;
+  margin-left: 2rem;
+}
 .about-img {
   display: none;
   padding: 2rem;
@@ -351,6 +356,9 @@ p {
 }
 .about-info {
   margin: auto 2rem;
+}
+.about-info h2 {
+  font-size: 2.5rem;
 }
 .content-container {
   display: flex;
@@ -364,16 +372,23 @@ p {
 }
 .testimonials-container h2 {
   padding: 2rem;
+  font-size: 3rem;
 }
 .testimonial-carousel {
   display: flex;
   justify-content: space-around;
 }
 .testimonial-carousel img {
-  width: 10%;
+  width: 60%;
+  border-radius: 2%;
+}
+@media (min-width: 800px) {
+  .testimonial-carousel img {
+    width: 30%;
+  }
 }
 .testimonial-carousel .user-image {
-  width: 200%;
+  width: 100%;
 }
 .carousel-testimonial {
   margin: 5rem auto;
@@ -386,6 +401,9 @@ p {
   .carousel-testimonial {
     width: 60%;
   }
+}
+.carousel-testimonial h4 {
+  font-size: 1.8rem;
 }
 .team-intro {
   margin: 15rem 0 5rem 0;

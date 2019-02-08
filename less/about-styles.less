@@ -2,6 +2,10 @@
 
 .about-content {
     margin: 15rem 0;
+    h1 {
+        font-size: 3rem;
+        margin-left: 2rem;
+    }
 }
 
 .about-img {
@@ -14,6 +18,9 @@
 
 .about-info {
     margin: auto 2rem;
+    h2 {
+        font-size: 2.5rem;
+    }
 }
 
 .content-container {
@@ -28,6 +35,7 @@
     align-items: center;
     h2 {
         padding: 2rem;
+        font-size: 3rem;
     }
 }
 
@@ -35,10 +43,14 @@
     display: flex;
     justify-content: space-around;
     img {
-        width: 10%;
+        width: 60%;
+        border-radius: 2%;
+        @media(min-width: @tablet-width) {
+            width: 30%;
+        }
     }
     .user-image {
-        width: 200%;
+        width: 100%;
     }
 }
 
@@ -51,6 +63,9 @@
     padding: 4rem;
     @media(min-width: @tablet-width) {
         width: 60%;
+    }
+    h4 {
+        font-size: 1.8rem;
     }
 }
 
