@@ -1,14 +1,24 @@
 // About Styles
 
-.half-page-img-about {
+.about-content {
+    margin: 15rem 0;
+}
+
+.about-img {
     display: none;
+    padding: 2rem;
     @media(min-width: @tablet-width) {
         display: flex;
     }
 }
 
+.about-info {
+    margin: auto 2rem;
+}
+
 .content-container {
     display: flex;
+    align-items: center;
 }
 
 .testimonials-container {
@@ -35,9 +45,12 @@
 
 .carousel-testimonial {
     margin: 5rem auto;
-    width: 60%;
+    width: 100%;
     background-color: @alt-background-color;
     border-radius: 0.5rem;
     padding: 4rem;
+    @media(min-width: @tablet-width) {
+        width: 60%;
+    }
 }
 

@@ -1,7 +1,7 @@
 $(document).ready(function(){
   
   // Team Page Blurbs Default to Hide
-  $('.hidden-blurb').slideUp();
+  $('.hidden-blurb').slideUp(0);
 
   // When hovering over team pics the blurbs show
   $(function(){
@@ -11,6 +11,12 @@ $(document).ready(function(){
       }, function() {
         $(this).removeClass('member-hover');
         $('.hidden-blurb').slideUp(500);
+      })
+    })
+
+    $(function(){
+      $('.nav-logo').click(function() {
+        $(this).fadeOut(750).fadeIn(500);
       })
     })
 
